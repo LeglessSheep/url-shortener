@@ -1,11 +1,11 @@
 'use strict';
 
-const registerController = require('../../controllers/apis/register');
+const urlController = require('../../controllers/apis/url');
 
 const express = require('express');
 
 let router = express.Router();
 
-router.use('/register', registerController);
+router.use('/', urlController);
 
 module.exports = router;
